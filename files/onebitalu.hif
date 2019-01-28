@@ -27,5 +27,8 @@ FILES
 }
 TREE
 {
-	onebitalu::(0,0):(0): onebitalu.gdf;
+	onebitalu::(0,0):(0): onebitalu.gdf
+	{
+		fulladder::(0,0):(1): fulladder.gdf;
+	}
 }
