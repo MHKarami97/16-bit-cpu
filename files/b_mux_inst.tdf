@@ -1,0 +1,10 @@
+(
+	result_sig
+) = b_mux	(
+	.data1 = data1_sig,
+	.data0 = data0_sig,
+	.sel = sel_sig
+)
+RETURNS (
+	.result
+);
