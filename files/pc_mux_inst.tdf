@@ -1,0 +1,11 @@
+(
+	result_sig[]
+) = pc_mux	(
+	.data2_[] = data2__sig[],
+	.data1_[] = data1__sig[],
+	.data0_[] = data0__sig[],
+	.sel[] = sel_sig[]
+)
+RETURNS (
+	.result[]
+);

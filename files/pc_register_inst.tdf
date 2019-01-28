@@ -1,0 +1,8 @@
+(
+	q_sig[]
+) = pc_register	(
+	.address[] = address_sig[]
+)
+RETURNS (
+	.q[]
+);

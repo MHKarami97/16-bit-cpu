@@ -1,0 +1,10 @@
+(
+	q_sig[]
+) = i	(
+	.address[] = address_sig[],
+	.we = we_sig,
+	.data[] = data_sig[]
+)
+RETURNS (
+	.q[]
+);

@@ -1,0 +1,8 @@
+(
+	q_sig[]
+) = instraction_memory	(
+	.address[] = address_sig[]
+)
+RETURNS (
+	.q[]
+);
