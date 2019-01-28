@@ -1,0 +1,10 @@
+(
+	dio_sig[]
+) = a_memorys	(
+	.address[] = address_sig[],
+	.we = we_sig,
+	.outenab = outenab_sig
+)
+RETURNS (
+	.dio[]
+);

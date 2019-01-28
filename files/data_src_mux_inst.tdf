@@ -1,0 +1,10 @@
+(
+	result_sig[]
+) = data_src_mux	(
+	.data1_[] = data1__sig[],
+	.data0_[] = data0__sig[],
+	.sel = sel_sig
+)
+RETURNS (
+	.result[]
+);
