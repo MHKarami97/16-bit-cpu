@@ -29,7 +29,7 @@ TREE
 {
 	onebitalu::(0,0):(0): onebitalu.gdf
 	{
-		b_mux::(0,0):(9): b_mux.tdf;
 		fulladder::(0,0):(1): fulladder.gdf;
+		b_mux::(0,0):(9): b_mux.tdf;
 	}
 }
