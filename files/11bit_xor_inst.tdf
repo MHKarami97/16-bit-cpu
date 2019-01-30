@@ -1,0 +1,9 @@
+(
+	result_sig[]
+) = 11bit_xor	(
+	.data0_[] = data0__sig[],
+	.data1_[] = data1__sig[]
+)
+RETURNS (
+	.result[]
+);

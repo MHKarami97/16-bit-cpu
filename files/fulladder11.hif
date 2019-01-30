@@ -27,11 +27,9 @@ FILES
 }
 TREE
 {
-	onebitalu::(0,0):(0): onebitalu.gdf
+	fulladder11::(0,0):(0): fulladder11.gdf
 	{
-		alu_op_2_mux::(0,0):(14): alu_op_2_mux.tdf;
-		alu_op_max::(0,0):(13): alu_op_max.tdf;
-		b_mux::(0,0):(9): b_mux.tdf;
-		fulladder::(0,0):(1): fulladder.gdf;
+		11bit_xor::(0,0):(14): 11bit_xor.tdf;
+		11bit_xor::(0,0):(13): 11bit_xor.tdf;
 	}
 }

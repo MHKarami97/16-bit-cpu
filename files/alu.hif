@@ -27,5 +27,119 @@ FILES
 }
 TREE
 {
-	alu::(0,0):(0): alu.gdf;
+	alu::(0,0):(0): alu.gdf
+	{
+		onebitalu::(0,0):(20): onebitalu.gdf
+		{
+			alu_op_2_mux::(0,0):(14): alu_op_2_mux.tdf;
+			alu_op_max::(0,0):(13): alu_op_max.tdf;
+			b_mux::(0,0):(9): b_mux.tdf;
+			fulladder::(0,0):(1): fulladder.gdf;
+		}
+		onebitalu::(0,0):(19): onebitalu.gdf
+		{
+			alu_op_2_mux::(0,0):(14): alu_op_2_mux.tdf;
+			alu_op_max::(0,0):(13): alu_op_max.tdf;
+			b_mux::(0,0):(9): b_mux.tdf;
+			fulladder::(0,0):(1): fulladder.gdf;
+		}
+		onebitalu::(0,0):(18): onebitalu.gdf
+		{
+			alu_op_2_mux::(0,0):(14): alu_op_2_mux.tdf;
+			alu_op_max::(0,0):(13): alu_op_max.tdf;
+			b_mux::(0,0):(9): b_mux.tdf;
+			fulladder::(0,0):(1): fulladder.gdf;
+		}
+		onebitalu::(0,0):(17): onebitalu.gdf
+		{
+			alu_op_2_mux::(0,0):(14): alu_op_2_mux.tdf;
+			alu_op_max::(0,0):(13): alu_op_max.tdf;
+			b_mux::(0,0):(9): b_mux.tdf;
+			fulladder::(0,0):(1): fulladder.gdf;
+		}
+		onebitalu::(0,0):(16): onebitalu.gdf
+		{
+			alu_op_2_mux::(0,0):(14): alu_op_2_mux.tdf;
+			alu_op_max::(0,0):(13): alu_op_max.tdf;
+			b_mux::(0,0):(9): b_mux.tdf;
+			fulladder::(0,0):(1): fulladder.gdf;
+		}
+		onebitalu::(0,0):(15): onebitalu.gdf
+		{
+			alu_op_2_mux::(0,0):(14): alu_op_2_mux.tdf;
+			alu_op_max::(0,0):(13): alu_op_max.tdf;
+			b_mux::(0,0):(9): b_mux.tdf;
+			fulladder::(0,0):(1): fulladder.gdf;
+		}
+		onebitalu::(0,0):(14): onebitalu.gdf
+		{
+			alu_op_2_mux::(0,0):(14): alu_op_2_mux.tdf;
+			alu_op_max::(0,0):(13): alu_op_max.tdf;
+			b_mux::(0,0):(9): b_mux.tdf;
+			fulladder::(0,0):(1): fulladder.gdf;
+		}
+		onebitalu::(0,0):(13): onebitalu.gdf
+		{
+			alu_op_2_mux::(0,0):(14): alu_op_2_mux.tdf;
+			alu_op_max::(0,0):(13): alu_op_max.tdf;
+			b_mux::(0,0):(9): b_mux.tdf;
+			fulladder::(0,0):(1): fulladder.gdf;
+		}
+		onebitalu::(0,0):(12): onebitalu.gdf
+		{
+			alu_op_2_mux::(0,0):(14): alu_op_2_mux.tdf;
+			alu_op_max::(0,0):(13): alu_op_max.tdf;
+			b_mux::(0,0):(9): b_mux.tdf;
+			fulladder::(0,0):(1): fulladder.gdf;
+		}
+		onebitalu::(0,0):(11): onebitalu.gdf
+		{
+			alu_op_2_mux::(0,0):(14): alu_op_2_mux.tdf;
+			alu_op_max::(0,0):(13): alu_op_max.tdf;
+			b_mux::(0,0):(9): b_mux.tdf;
+			fulladder::(0,0):(1): fulladder.gdf;
+		}
+		onebitalu::(0,0):(10): onebitalu.gdf
+		{
+			alu_op_2_mux::(0,0):(14): alu_op_2_mux.tdf;
+			alu_op_max::(0,0):(13): alu_op_max.tdf;
+			b_mux::(0,0):(9): b_mux.tdf;
+			fulladder::(0,0):(1): fulladder.gdf;
+		}
+		onebitalu::(0,0):(9): onebitalu.gdf
+		{
+			alu_op_2_mux::(0,0):(14): alu_op_2_mux.tdf;
+			alu_op_max::(0,0):(13): alu_op_max.tdf;
+			b_mux::(0,0):(9): b_mux.tdf;
+			fulladder::(0,0):(1): fulladder.gdf;
+		}
+		onebitalu::(0,0):(8): onebitalu.gdf
+		{
+			alu_op_2_mux::(0,0):(14): alu_op_2_mux.tdf;
+			alu_op_max::(0,0):(13): alu_op_max.tdf;
+			b_mux::(0,0):(9): b_mux.tdf;
+			fulladder::(0,0):(1): fulladder.gdf;
+		}
+		onebitalu::(0,0):(7): onebitalu.gdf
+		{
+			alu_op_2_mux::(0,0):(14): alu_op_2_mux.tdf;
+			alu_op_max::(0,0):(13): alu_op_max.tdf;
+			b_mux::(0,0):(9): b_mux.tdf;
+			fulladder::(0,0):(1): fulladder.gdf;
+		}
+		onebitalu::(0,0):(6): onebitalu.gdf
+		{
+			alu_op_2_mux::(0,0):(14): alu_op_2_mux.tdf;
+			alu_op_max::(0,0):(13): alu_op_max.tdf;
+			b_mux::(0,0):(9): b_mux.tdf;
+			fulladder::(0,0):(1): fulladder.gdf;
+		}
+		onebitalu::(0,0):(3): onebitalu.gdf
+		{
+			alu_op_2_mux::(0,0):(14): alu_op_2_mux.tdf;
+			alu_op_max::(0,0):(13): alu_op_max.tdf;
+			b_mux::(0,0):(9): b_mux.tdf;
+			fulladder::(0,0):(1): fulladder.gdf;
+		}
+	}
 }
