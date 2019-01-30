@@ -1,0 +1,12 @@
+(
+	q_sig[]
+) = data_memory	(
+	.data[] = data_sig[],
+	.wraddress[] = wraddress_sig[],
+	.rdaddress[] = rdaddress_sig[],
+	.wren = wren_sig,
+	.rden = rden_sig
+)
+RETURNS (
+	.q[]
+);
