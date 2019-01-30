@@ -29,17 +29,19 @@ TREE
 {
 	cpu::(0,0):(0): cpu.gdf
 	{
-		and_11::(0,0):(13): and_11.tdf;
-		and9::(0,0):(11): and9.gdf;
-		pc_mux::(0,0):(10): pc_mux.tdf;
-		pc_register::(0,0):(9): pc_register.tdf;
-		i::(0,0):(8): i.tdf;
-		add_src_mux::(0,0):(7): add_src_mux.tdf;
-		instraction_memory::(0,0):(6): instraction_memory.tdf;
-		t_memory::(0,0):(5): t_memory.tdf;
-		data_src_mux::(0,0):(4): data_src_mux.tdf;
-		src_a_mux::(0,0):(3): src_a_mux.tdf;
-		a_memorys::(0,0):(2): a_memorys.tdf;
+		fulladder11::(0,0):(22): fulladder11.gdf;
+		data_memory::(0,0):(20): data_memory.tdf;
+		alu::(0,0):(16): alu.gdf;
 		74154::(0,0):(1): 74154.gdf;
+		a_memorys::(0,0):(2): a_memorys.tdf;
+		src_a_mux::(0,0):(3): src_a_mux.tdf;
+		data_src_mux::(0,0):(4): data_src_mux.tdf;
+		t_memory::(0,0):(5): t_memory.tdf;
+		instraction_memory::(0,0):(6): instraction_memory.tdf;
+		add_src_mux::(0,0):(7): add_src_mux.tdf;
+		pc_register::(0,0):(9): pc_register.tdf;
+		pc_mux::(0,0):(10): pc_mux.tdf;
+		and9::(0,0):(11): and9.gdf;
+		and_11::(0,0):(13): and_11.tdf;
 	}
 }
