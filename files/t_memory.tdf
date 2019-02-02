@@ -41,6 +41,7 @@ INCLUDE "lpm_ram_io.inc";
 SUBDESIGN t_memory
 (
 	address[15..0]	 : INPUT;
+	inclock	 : INPUT;
 	we	 : INPUT = VCC;
 	outenab	 : INPUT = VCC;
 	dio[15..0]	 : BIDIR;
@@ -52,7 +53,7 @@ VARIABLE
 			LPM_WIDTH = 16,
 			LPM_WIDTHAD = 16,
 			LPM_INDATA = "UNREGISTERED",
-			LPM_ADDRESS_CONTROL = "UNREGISTERED",
+			LPM_ADDRESS_CONTROL = "REGISTERED",
 			LPM_OUTDATA = "UNREGISTERED",
 			LPM_HINT = "USE_EAB=ON"
 			);
@@ -62,6 +63,7 @@ BEGIN
 	dio[15..0] = lpm_ram_io_component.dio[15..0];
 	lpm_ram_io_component.outenab = outenab;
 	lpm_ram_io_component.address[15..0] = address[15..0];
+	lpm_ram_io_component.inclock = inclock;
 	lpm_ram_io_component.we = we;
 END;
 
@@ -73,7 +75,7 @@ END;
 -- Retrieval info: PRIVATE: WidthData NUMERIC "16"
 -- Retrieval info: PRIVATE: WidthAddr NUMERIC "16"
 -- Retrieval info: PRIVATE: RegData NUMERIC "0"
--- Retrieval info: PRIVATE: RegAdd NUMERIC "0"
+-- Retrieval info: PRIVATE: RegAdd NUMERIC "1"
 -- Retrieval info: PRIVATE: OutputRegistered NUMERIC "0"
 -- Retrieval info: PRIVATE: BlankMemory NUMERIC "1"
 -- Retrieval info: PRIVATE: MIFfilename STRING ""
@@ -82,14 +84,16 @@ END;
 -- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "16"
 -- Retrieval info: CONSTANT: LPM_WIDTHAD NUMERIC "16"
 -- Retrieval info: CONSTANT: LPM_INDATA STRING "UNREGISTERED"
--- Retrieval info: CONSTANT: LPM_ADDRESS_CONTROL STRING "UNREGISTERED"
+-- Retrieval info: CONSTANT: LPM_ADDRESS_CONTROL STRING "REGISTERED"
 -- Retrieval info: CONSTANT: LPM_OUTDATA STRING "UNREGISTERED"
 -- Retrieval info: CONSTANT: LPM_HINT STRING "USE_EAB=ON"
 -- Retrieval info: USED_PORT: address 0 0 16 0 INPUT NODEFVAL address[15..0]
+-- Retrieval info: USED_PORT: inclock 0 0 0 0 INPUT NODEFVAL inclock
 -- Retrieval info: USED_PORT: we 0 0 0 0 INPUT VCC we
 -- Retrieval info: USED_PORT: dio 0 0 16 0 BIDIR NODEFVAL dio[15..0]
 -- Retrieval info: USED_PORT: outenab 0 0 0 0 INPUT VCC outenab
 -- Retrieval info: CONNECT: @address 0 0 16 0 address 0 0 16 0
+-- Retrieval info: CONNECT: @inclock 0 0 0 0 inclock 0 0 0 0
 -- Retrieval info: CONNECT: @we 0 0 0 0 we 0 0 0 0
 -- Retrieval info: CONNECT: dio 0 0 16 0 @dio 0 0 16 0
 -- Retrieval info: CONNECT: @outenab 0 0 0 0 outenab 0 0 0 0

@@ -1,0 +1,8 @@
+(
+	result_sig[]
+) = 16_bit_or	(
+	.data0_[] = data0__sig[]
+)
+RETURNS (
+	.result[]
+);

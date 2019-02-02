@@ -22,12 +22,12 @@
 
 FUNCTION pc_mux 
 (
-	data2_[10..0],
-	data1_[10..0],
-	data0_[10..0],
+	data2_[11..0],
+	data1_[11..0],
+	data0_[11..0],
 	sel[1..0]
 )
 
 RETURNS (
-	result[10..0]
+	result[11..0]
 );

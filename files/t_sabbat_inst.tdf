@@ -1,0 +1,11 @@
+(
+	q_sig[]
+) = t_sabbat	(
+	.clock = clock_sig,
+	.enable = enable_sig,
+	.sclr = sclr_sig,
+	.data[] = data_sig[]
+)
+RETURNS (
+	.q[]
+);

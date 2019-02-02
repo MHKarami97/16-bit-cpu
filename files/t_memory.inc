@@ -23,6 +23,7 @@
 FUNCTION t_memory 
 (
 	address[15..0],
+	inclock,
 	we,
 	outenab
 )

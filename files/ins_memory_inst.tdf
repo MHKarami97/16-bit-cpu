@@ -1,0 +1,9 @@
+(
+	q_sig[]
+) = ins_memory	(
+	.address[] = address_sig[],
+	.inclock = inclock_sig
+)
+RETURNS (
+	.q[]
+);

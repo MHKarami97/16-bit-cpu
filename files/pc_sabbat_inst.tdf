@@ -1,0 +1,9 @@
+(
+	q_sig[]
+) = pc_sabbat	(
+	.clock = clock_sig,
+	.data[] = data_sig[]
+)
+RETURNS (
+	.q[]
+);

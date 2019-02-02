@@ -29,7 +29,7 @@ TREE
 {
 	fulladder11::(0,0):(0): fulladder11.gdf
 	{
-		11bit_xor::(0,0):(14): 11bit_xor.tdf;
 		11bit_xor::(0,0):(13): 11bit_xor.tdf;
+		11bit_xor::(0,0):(14): 11bit_xor.tdf;
 	}
 }

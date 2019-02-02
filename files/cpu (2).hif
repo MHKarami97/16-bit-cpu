@@ -24,8 +24,15 @@ HIF003
 --
 FILES
 {
+	cpu.gdf
+	{
+		cpu [] []
+		{
+			0 [] [];
+		}
+	}
 }
 TREE
 {
-	main::(0,0):(0): main.gdf;
+	cpu::(0,0):(0): cpu.gdf;
 }

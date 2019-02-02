@@ -40,11 +40,11 @@ INCLUDE "lpm_mux.inc";
 
 SUBDESIGN pc_mux
 (
-	data2_[10..0]	 : INPUT;
-	data1_[10..0]	 : INPUT;
-	data0_[10..0]	 : INPUT;
+	data2_[11..0]	 : INPUT;
+	data1_[11..0]	 : INPUT;
+	data0_[11..0]	 : INPUT;
 	sel[1..0]	 : INPUT;
-	result[10..0]	 : OUTPUT;
+	result[11..0]	 : OUTPUT;
 )
 
 VARIABLE
@@ -52,16 +52,16 @@ VARIABLE
 	lpm_mux_component : lpm_mux WITH (
 			LPM_SIZE = 3,
 			LPM_WIDTHS = 2,
-			LPM_WIDTH = 11
+			LPM_WIDTH = 12
 			);
 
 BEGIN
 
-	result[10..0] = lpm_mux_component.result[10..0];
+	result[11..0] = lpm_mux_component.result[11..0];
 	lpm_mux_component.sel[1..0] = sel[1..0];
-	lpm_mux_component.data[2..2][10..0] = data2_[10..0];
-	lpm_mux_component.data[1..1][10..0] = data1_[10..0];
-	lpm_mux_component.data[0..0][10..0] = data0_[10..0];
+	lpm_mux_component.data[2..2][11..0] = data2_[11..0];
+	lpm_mux_component.data[1..1][11..0] = data1_[11..0];
+	lpm_mux_component.data[0..0][11..0] = data0_[11..0];
 END;
 
 
@@ -71,14 +71,14 @@ END;
 -- ============================================================
 -- Retrieval info: CONSTANT: LPM_SIZE NUMERIC "3"
 -- Retrieval info: CONSTANT: LPM_WIDTHS NUMERIC "2"
--- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "11"
--- Retrieval info: USED_PORT: result 0 0 11 0 OUTPUT NODEFVAL result[10..0]
--- Retrieval info: USED_PORT: data2_ 0 0 11 0 INPUT NODEFVAL data2_[10..0]
--- Retrieval info: USED_PORT: data1_ 0 0 11 0 INPUT NODEFVAL data1_[10..0]
--- Retrieval info: USED_PORT: data0_ 0 0 11 0 INPUT NODEFVAL data0_[10..0]
+-- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "12"
+-- Retrieval info: USED_PORT: result 0 0 12 0 OUTPUT NODEFVAL result[11..0]
+-- Retrieval info: USED_PORT: data2_ 0 0 12 0 INPUT NODEFVAL data2_[11..0]
+-- Retrieval info: USED_PORT: data1_ 0 0 12 0 INPUT NODEFVAL data1_[11..0]
+-- Retrieval info: USED_PORT: data0_ 0 0 12 0 INPUT NODEFVAL data0_[11..0]
 -- Retrieval info: USED_PORT: sel 0 0 2 0 INPUT NODEFVAL sel[1..0]
--- Retrieval info: CONNECT: result 0 0 11 0 @result 0 0 11 0
--- Retrieval info: CONNECT: @data 1 2 11 0 data2_ 0 0 11 0
--- Retrieval info: CONNECT: @data 1 1 11 0 data1_ 0 0 11 0
--- Retrieval info: CONNECT: @data 1 0 11 0 data0_ 0 0 11 0
+-- Retrieval info: CONNECT: result 0 0 12 0 @result 0 0 12 0
+-- Retrieval info: CONNECT: @data 1 2 12 0 data2_ 0 0 12 0
+-- Retrieval info: CONNECT: @data 1 1 12 0 data1_ 0 0 12 0
+-- Retrieval info: CONNECT: @data 1 0 12 0 data0_ 0 0 12 0
 -- Retrieval info: CONNECT: @sel 0 0 2 0 sel 0 0 2 0

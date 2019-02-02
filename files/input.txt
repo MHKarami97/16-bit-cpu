@@ -1,0 +1,17 @@
+    mov     ax, 1
+    mov     cx, 10
+    xor     dx, dx
+Label1:
+    add     dx, ax
+    inc     ax
+    loop    Label1
+
+
+0:  66 b8 01 00             mov    ax,0x1
+4:  66 b9 0a 00             mov    cx,0xa
+8:  66 31 d2                xor    dx,dx
+000000000000000b <Label1>:
+b:  66 01 c2                add    dx,ax
+e:  66 ff c0                inc    ax
+11: e2 f8                   loop   b <Label1>
+

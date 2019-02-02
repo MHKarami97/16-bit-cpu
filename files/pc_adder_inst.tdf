@@ -1,0 +1,8 @@
+(
+	result_sig[]
+) = pc_adder	(
+	.datab[] = datab_sig[]
+)
+RETURNS (
+	.result[]
+);

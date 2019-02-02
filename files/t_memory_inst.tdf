@@ -2,6 +2,7 @@
 	dio_sig[]
 ) = t_memory	(
 	.address[] = address_sig[],
+	.inclock = inclock_sig,
 	.we = we_sig,
 	.outenab = outenab_sig
 )

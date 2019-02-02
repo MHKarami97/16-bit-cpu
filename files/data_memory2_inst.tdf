@@ -1,0 +1,11 @@
+(
+	q_sig[]
+) = data_memory2	(
+	.address[] = address_sig[],
+	.inclock = inclock_sig,
+	.we = we_sig,
+	.data[] = data_sig[]
+)
+RETURNS (
+	.q[]
+);
